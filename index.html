@@ -6,22 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thomas Kokossou</title>
   <style>
+    body {
+      display: flex; /* Use flexbox to align content */
+    }
+
+    nav {
+      width: 200px; /* Width of the sidebar */
+      position: fixed; /* Fix the sidebar to the left */
+      top: 0;
+      left: 0;
+      height: 100%; /* Full height */
+      background-color: #333; /* Background color */
+      z-index: 1000; /* Stay on top */
+    }
+
     nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      background-color: #333;
     }
 
     nav ul li {
-      float: left;
+      /* Removed float since we're using flexbox */
     }
 
     nav ul li a {
       display: block;
       color: white;
-      text-align: center;
+      text-align: left; /* Align text to the left */
       padding: 14px 16px;
       text-decoration: none;
     }
@@ -30,16 +42,10 @@
       background-color: #111;
     }
 
-    nav {
-      width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: 1000; /* Ensure the navbar stays on top */
-    }
-
-    /* Main content margin */
     .content {
-      margin-top: 60px; /* Adjust this to the height of your navbar */
+      margin-left: 220px; /* Leave space for the sidebar */
+      padding: 20px; /* Add some padding */
+      flex-grow: 1; /* Allow content to grow */
     }
   </style>
 </head>
@@ -58,8 +64,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p>Welcome to my website! I am a Ph.D. candidate in the Department of Economics at McGill University. My research interests are in the fields of Development Economics, Applied Microeconomics, and Labour Economics. <br>
-            <br>
+          <p>Welcome to my website! I am a Ph.D. candidate in the Department of Economics at McGill University. My research interests are in the fields of Development Economics, Applied Microeconomics, and Labour Economics. <br><br>
             <big><b>Recent Research</b></big><br>
             <ul>
               <li>The impacts of 4G deployment on labour market outcomes in Ecuador</li>
@@ -67,24 +72,25 @@
               <li>An experiment of the impacts of apps on gender social norms in Paraguay</li>
             </ul>
             <hr>
-            <big><b>About me:</b></big>
-            <br>
+            <big><b>About me:</b></big><br>
           </p>
         </div>
 
         <!-- Contact Info on the Sidebar -->
-      <div class="col-md-4">
-        <div style="border: 1px solid #ccc; padding: 20px; text-align: center; margin-top: 20px; background-color: #f9f9f9;">
-          <div style="font-family: 'Helvetica', serif; font-size: 24px;"><b>Thomas Kokossou</b></div><br>
-          <p style="margin: 10px 0;">PhD Candidate<br>McGill University<br>Department of Economics<br>Montreal, Quebec, Canada<br><br>
-          Contact:<br>
-          <a href="mailto:thomas.kokossou[at]mcgill[dot]ca">thomas.kokossou@mcgill.ca</a>
-          <a href="https://www.linkedin.com/in/thomas-kokossou-4648881bb/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">LinkedIn</a></dd> <br>
-          </p>
+        <div class="col-md-4">
+          <div style="border: 1px solid #ccc; padding: 20px; text-align: center; margin-top: 20px; background-color: #f9f9f9;">
+            <div style="font-family: 'Helvetica', serif; font-size: 24px;"><b>Thomas Kokossou</b></div>
+            <p style="margin: 10px 0;">PhD Candidate<br>McGill University<br>Department of Economics<br>Montreal, Quebec, Canada<br><br>
+              Contact:<br>
+              <a href="mailto:thomas.kokossou[at]mcgill[dot]ca">thomas.kokossou@mcgill.ca</a><br>
+              <a href="https://www.linkedin.com/in/thomas-kokossou-4648881bb/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+          </div>
         </div>
-      </div>
 
-        
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
