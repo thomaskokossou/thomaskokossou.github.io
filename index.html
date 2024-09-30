@@ -34,70 +34,57 @@
       width: 100%;
       position: fixed;
       top: 0;
+      z-index: 1000; /* Ensure the navbar stays on top */
+    }
+
+    /* Main content margin */
+    .content {
+      margin-top: 60px; /* Adjust this to the height of your navbar */
     }
   </style>
 </head>
-<body>
-
-
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="cv.html">CV</a></li>
-        </ul>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
   </nav>
 
-  
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8" style="height: 100vh;">
-        <div style="margin-top: 60px; text-align:justify;">
-          <p>Welcome to my website! I am a Ph.D. candidate in the Department Economics at McGill University. My research interests are in the fields of Development Economics, Applied Microeconomics and Labour Economics. <br>
-       
-          <br>
-          <br>
-          <big><b>Recent Research</b></big><br>
-          <ul>
-            <li> The impacts of 4G deployment on labour market outcomes in Ecuador </li>
-            <li> A randomized control trial of electricity in rural Kenya </li>
-            <li> An experiment of the impacts of apps on gender social norms in Paraguay </li>
-          </ul>
-          <hr>
-          <big><b>About me:</b></big>
-          <br>
-          
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Welcome to my website! I am a Ph.D. candidate in the Department of Economics at McGill University. My research interests are in the fields of Development Economics, Applied Microeconomics, and Labour Economics. <br>
+            <br>
+            <big><b>Recent Research</b></big><br>
+            <ul>
+              <li>The impacts of 4G deployment on labour market outcomes in Ecuador</li>
+              <li>A randomized control trial of electricity in rural Kenya</li>
+              <li>An experiment of the impacts of apps on gender social norms in Paraguay</li>
+            </ul>
+            <hr>
+            <big><b>About me:</b></big>
+            <br>
+          </p>
         </div>
-      </div>
 
-      <!-- Contact Info on the Sidebar -->
-      <div class="col-md-4">
-        <div style="font-family: 'Helvetica', serif; font-size: 36px;"><b>Thomas Kokossou</b></div><br>
-        <p>PhD Candidate<br>McGill University<br>Department of Economics<br>Montreal, Quebec, Canada<br><br>
-          Contact:<br>
-          <a href="mailto:thomas.kokossou[at]mcgill[dot]ca">thomas.kokossou@mcgill.ca</a><br>
-        </p>
-      </div>
+        <!-- Contact Info on the Sidebar -->
+        <div class="col-md-4">
+          <div style="font-family: 'Helvetica', serif; font-size: 36px;"><b>Thomas Kokossou</b></div><br>
+          <p>PhD Candidate<br>McGill University<br>Department of Economics<br>Montreal, Quebec, Canada<br><br>
+            Contact:<br>
+            <a href="mailto:thomas.kokossou[at]mcgill[dot]ca">thomas.kokossou@mcgill.ca</a><br>
+          </p>
+        </div>
 
-      <!-- Links on the Sidebar -->
-      <div class="col-md-4">
-        <dd><a href="https://www.linkedin.com/in/thomas-kokossou-4648881bb/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">LinkedIn</a></dd>
+        <!-- Links on the Sidebar -->
+        <div class="col-md-4">
+          <dd><a href="https://www.linkedin.com/in/thomas-kokossou-4648881bb/?originalSubdomain=ca" target="_blank" rel="noopener noreferrer">LinkedIn</a></dd>
+        </div>
       </div>
     </div>
   </div>
