@@ -64,9 +64,10 @@
         height: auto;
       }
     
-    footer {
+     footer {
         width: calc(100% - 200px);
         left: 200px;
+        position: fixed; /* Default for desktop */
       }
 
 
@@ -112,6 +113,8 @@
       footer {
         width: 100%; /* Adjust footer width on mobile */
         left: 0;
+        position: relative; 
+        bottom: 0; 
       }
     }
   </style>
@@ -180,12 +183,11 @@
         </div>
       </div>
     </div>
-   <hr style="border: 2px solid #98afc0; width: 100%; ">
   </div>
 </body>
 
   
-<footer style="background-color: #98afc0; color: white; text-align: center; padding: 10px 0; position: fixed; bottom: 0; ">
+<footer style="background-color: #98afc0; color: white; text-align: center; padding: 10px 0; bottom: 0; ">
   Thomas Kokossou &copy; 2024
 </footer>
   
